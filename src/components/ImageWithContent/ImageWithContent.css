@@ -1,0 +1,17 @@
+.image-with-content {
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: space-evenly;
+	background-color: whitesmoke;
+	min-width: 100%;
+	align-items: center;
+	padding: 1%;
+	color: #282c34;
+	gap: 10%;
+}
+
+.placeholder-img {
+	background-color: cornflowerblue;
+	min-width: 500px;
+	min-height: 300px;
+}

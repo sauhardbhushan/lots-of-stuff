@@ -1,8 +1,7 @@
 .gallery-queue {
-	border-radius: 20px;
 	background: #6c778d;
 	min-width: 100%;
-	min-height: 60vmin;
+	min-height: 30vmin;
 	display: grid;
 	grid-auto-flow: column;
 	justify-content: space-evenly;
@@ -10,9 +9,8 @@
 
 .logo {
 	align-self: center;
-	height: 40vmin;
+	height: 20vmin;
 	pointer-events: none;
-	opacity: 0;
 }
 
 .logo:nth-child(2) {
@@ -24,20 +22,18 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-	.logo {
-		animation: App-logo-spin infinite 20s linear;
-	}
 	.logo--visible {
+		opacity: 0;
 		animation: slide 0.5s forwards;
 	}
 }
 
 @keyframes slide {
 	0% {
-		transform: translateX(-900px);
+		transform: translateX(-100%) rotate(0deg);
 	}
 	100% {
-		transform: translateX(0);
+		transform: translateX(0) rotate(360deg);
 		opacity: 1;
 	}
 }
