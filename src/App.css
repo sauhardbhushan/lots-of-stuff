@@ -4,13 +4,50 @@ html {
 
 .App {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-row-gap: 20px;
+  grid-template-areas:
+          'sidebar headline'
+          'sidebar clock'
+          'sidebar outlet'
+          'sidebar content';
   font-size: calc(10px + 2vmin);
   color: white;
+
 }
+
+.grid-sidebar {
+  grid-area: sidebar;
+  background: rgba(211, 111, 23, 0.7);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.grid-clock {
+  grid-area: clock;
+}
+
+.grid-outlet {
+  grid-area: outlet
+}
+
+.grid-headline {
+  grid-area: headline;
+}
+
+.nav-bar {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-bar a {
+  margin: 10px;
+  font-size: .8em;
+  text-decoration: underline;
+  color: white;
+
+}
+
 
 .App-link {
   color: #61dafb;

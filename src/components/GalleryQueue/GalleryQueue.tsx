@@ -1,4 +1,4 @@
-import logo from '../../logo.svg'
+import logo from '../../img/logo.svg'
 import './GalleryQueue.css'
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 import {useRef} from "react";

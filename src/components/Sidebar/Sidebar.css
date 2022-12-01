@@ -1,0 +1,18 @@
+/*
+ * Copyright (c) 2022.
+ * All rights reserved by Sauhard Bhushan.
+ */
+
+.sidebar--ul {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+.sidebar--ul a {
+    text-decoration: none;
+    color: white;
+    font-size: .5em;
+}
